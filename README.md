@@ -1,16 +1,27 @@
-# database_contacts
+## Contacts_Database_sqflite
 
-A new Flutter project.
+Contacts_Database_sqflite is a simple Flutter application designed to store and manage contacts using a local SQLite database through the sqflite plugin.
+This app allows users to add, view, update, and delete contact information efficiently, demonstrating local data persistence in Flutter applications.
+
+Contacts_Database_sqflite هو تطبيق بسيط تم تطويره باستخدام Flutter لحفظ وإدارة جهات الاتصال باستخدام قاعدة بيانات محلية SQLite عبر إضافة sqflite.
+يتيح التطبيق للمستخدم إضافة وعرض وتحديث وحذف بيانات جهات الاتصال، ويعد مثالًا عمليًا على تخزين البيانات محليًا في تطبيقات Flutter.
+
 
 ## Getting Started
+This Flutter project is a simple contact management app named Contacts_Database_sqflite.
+It demonstrates how to use the sqflite plugin to store and manage contact information locally on the device.
 
-This project is a starting point for a Flutter application.
+# Features:
+Add new contacts (name, phone, email)
+Edit existing contacts
+Delete contacts
+View all saved contacts
 
-A few resources to get you started if this is your first Flutter project:
+# Requirements:
+Flutter SDK
+sqflite plugin
+Dart SDK
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Run the app:
+flutter pub get
+flutter run
