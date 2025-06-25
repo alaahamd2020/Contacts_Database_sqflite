@@ -24,5 +24,5 @@ It demonstrates how to use the sqflite plugin to store and manage contact inform
 * Dart SDK
 
 ## Run the app:
-1. flutter pub get
-2. flutter run
+* flutter pub get
+* flutter run
