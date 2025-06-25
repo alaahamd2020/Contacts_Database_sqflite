@@ -12,17 +12,17 @@ This Flutter project is a simple contact management app named Contacts_Database_
 
 It demonstrates how to use the sqflite plugin to store and manage contact information locally on the device.
 
-# Features:
+## Features:
 * Add new contacts (name, phone, email)
 * Edit existing contacts
 * Delete contacts
 * View all saved contacts
 
-# Requirements:
+## Requirements:
 * Flutter SDK
 * sqflite plugin
 * Dart SDK
 
-# Run the app:
+## Run the app:
 1. flutter pub get
 2. flutter run
