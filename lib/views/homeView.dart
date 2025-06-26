@@ -56,7 +56,7 @@ class _HomeviewState extends State<Homeview> {
       floatingActionButton: FloatingActionButton(
         onPressed: () => openAlertBox(null),
         backgroundColor: primaryColor,
-        child: Icon(Icons.add),
+        child: Icon(Icons.add, color: primaryColor.isLight?Colors.black:Colors.white,),
       ),
       body: Container(
         padding: EdgeInsets.all(15),
@@ -70,6 +70,14 @@ class _HomeviewState extends State<Homeview> {
                     key: UniqueKey(),
                     child: _buildItem(usersList[index], index),
                     onDismissed: (direction) => UserModel().delete(usersList[index].id!),
+                    background: Container(color: Colors.redAccent, child:
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(Icons.delete, color: Colors.white, size: 25, ),
+                          Icon(Icons.delete, color: Colors.white, size: 25,),
+                      ]
+                        ,)),
                 );
               },
               separatorBuilder: (context, index) => SizedBox(height: 15),
@@ -170,6 +178,7 @@ class _HomeviewState extends State<Homeview> {
                     child: CustomText(
                       text: name.text == '' ? 'Add Contact' : 'Edit Contact',
                       alignment: Alignment.center,
+                      color: primaryColor.isLight?Colors.black:Colors.white,
                     ),
                   ),
                 ],
